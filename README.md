@@ -1,3 +1,6 @@
+# Summer Gone HTML template - Simple and Clean 
+ Convert from <a href="https://creativemarket.com/maulanacreative/54432-Summer-Gone-One-Page-PSD-Template">PSD</a>. If you like it, buy it!
+ <a href="http://nguyenmanh1507.github.io/summergone/dist/">Live preview</a>
 # Foundation libsass template
 
 This is a template to start your own project that uses Grunt and libsass!
