@@ -1,171 +1,552 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="bower_components/picturefill/dist/picturefill.js" async></script>
+</head>
+<body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  <!-- OFF-CANVAS MENU
+  ================================================== -->
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      
+      <section class="right-small">
+        <a class="right-off-canvas-toggle show-for-small-only" href="#"><span class="show-for-sr">Menu</span><i class="fa fa-bars"></i></a>
+      </section>
+
+      <!-- Off Canvas Menu -->
+      <aside class="right-off-canvas-menu">
+        <!-- whatever you want goes here -->
+        <ul>
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </aside>
+
+
+  <!-- HEADER
+  ================================================== -->
+  
+  <header id="header">
     
     <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
+      
+      <div class="small-12 medium-5 columns">
+
+        <div class="site-brand">
+          <hgroup>
+            <h1 class="logo logo--header"><a href="/" class="sr-only">Summer Gone</a></h1>
+            <h2 class="sr-only">Creative Solution</h2>
+          </hgroup>
+        </div>
+        <!-- /.site-brand -->
+
+      </div>
+
+      <div class="medium-7 columns">
+        
+        <nav class="top-bar show-for-medium-up" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name"></li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="active"><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </section>
+        </nav>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </header>
+  <!-- /#header -->
+
+  <!-- END HEADER
+  ================================================== -->
+
+
+
+
+
+  <!-- SLIDESHOW
+  ================================================== -->
+
+  <div class="slideshow">
+    <ul class="orbit-slider" data-orbit>
+
+      <li class="active">
+       <div class="slideshow__content">
+          <img src="images/slide/1.jpg" alt="slide 1">
+          
+          <div class="overlay">
+            <div class="orbit-caption">
+               <hgroup>
+                 <h2 class="orbit-caption__heading">WE ARE SUMMER GONE CREATIVE SOLUTIONS FOR YOUR BUSINESS</h2>
+                 <h3 class="orbit-caption__sub-heading">We Believe in Simple and Effective Solutions that Pays!</h3>
+               </hgroup>
+               <a href="#" class="button radius btn-cta">Learn more</a>
             </div>
           </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+
+       </div>
+      </li>
+
+      <li>
+       <div class="slideshow__content">
+          <img src="images/slide/2.jpg" alt="slide 1">
+
+          <div class="overlay">
+            <div class="orbit-caption">
+               <hgroup>
+                 <h2 class="orbit-caption__heading">Success is not final, failure is not fatal</h2>
+                 <h3 class="orbit-caption__sub-heading">Try not to become a man of success, but rather try to become a man of value</h3>
+               </hgroup>
+               <a href="#" class="button radius btn-cta">Learn more</a>
             </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
           </div>
+
+       </div>
+      </li>
+
+      <li>
+       <div class="slideshow__content">
+          <img src="images/slide/3.jpg" alt="slide 1">
+          
+          <div class="overlay">
+            <div class="orbit-caption">
+               <hgroup>
+                 <h2 class="orbit-caption__heading">The starting point of all achievement is desire</h2>
+                 <h3 class="orbit-caption__sub-heading">Success consists of going from failure to failure without loss of enthusiasm</h3>
+               </hgroup>
+               <a href="#" class="button radius btn-cta">Learn more</a>
+            </div>
+          </div>
+
+       </div>
+      </li>
+
+      <li>
+       <div class="slideshow__content">
+          <img src="images/slide/4.jpg" alt="slide 1">
+          
+          <div class="overlay">
+            <div class="orbit-caption">
+               <hgroup>
+                 <h2 class="orbit-caption__heading">Success is how high you bounce when you hit bottom</h2>
+                 <h3 class="orbit-caption__sub-heading">Success makes so many people hate you. I wish it wasn't that way</h3>
+               </hgroup>
+               <a href="#" class="button radius btn-cta">Learn more</a>
+            </div>
+          </div>
+
+       </div>
+      </li>
+
+    </ul>
+  </div>
+  <!-- /.slideshow -->
+
+  <!-- END SLIDESHOW
+  ================================================== -->
+  
+
+
+
+
+  <!-- COMPANY INTRO
+  ================================================== -->
+  
+  <div id="about" class="row">
+    
+    <section class="company-intro clearfix">
+      
+      <div class="small-12 columns wow fadeIn">
+        
+        <h2 class="company-intro__about">About Summer Gone</h2>
+        <p>Place your text here. orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. isi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+
+      </div>
+
+      <div class="medium-4 columns wow fadeIn">
+        
+        <h3 class="company-intro__sub-title">Mission Statment</h3>
+        <p>Place your text here. orem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+      </div>
+
+      <div class="medium-4 columns wow fadeIn">
+        
+        <h3 class="company-intro__sub-title">Creative Solutions</h3>
+        <p>Place your text here. orem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+      </div>
+
+      <div class="medium-4 columns wow fadeIn">
+        
+        <h3 class="company-intro__sub-title">Company History</h3>
+        <p>Place your text here. orem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+      </div>
+
+    </section>
+    <!-- /.company-intro -->
+
+  </div>
+  <!-- /.row -->
+
+  <!-- END COMPANY INTRO
+  ================================================== -->
+
+
+
+
+
+  <!-- COMPANY QUOTE
+  ================================================== -->
+  
+  <div class="quote text-center">
+    
+    <h3 class="quote__title wow slideInUp">Summer Gone Solutions</h3>
+    <blockquote class="quote__content wow slideInUp">
+      Place your text here. orem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laoreet aliquam erat volutpat.
+    </blockquote>
+    <a href="#" class="button radius quote__link wow slideInUp">View more</a>
+
+  </div>
+  <!-- /.quote -->
+
+  <!-- END COMPANY QUOTE
+  ================================================== -->
+
+
+
+
+
+  <!-- SERVICES
+  ================================================== -->
+  
+  <div id="services" class="row">
+    
+    <section class="services small-12 columns">
+      
+      <h3 class="services__title">Services</h3>
+
+      <ul class="tabs" data-tab>
+        <li class="tab-title active"><a href="#panel1" class="services__name">UI/UX</a></li>
+        <li class="tab-title"><a href="#panel2" class="services__name">e-commerce design</a></li>
+        <li class="tab-title"><a href="#panel3" class="services__name">Brand strategy</a></li>
+      </ul>
+      <div class="tabs-content services__content">
+        <div class="content active" id="panel1">
+          <img src="images/services/e-commerce-design.jpg" alt="Company Services">
+          <h4 class="services__content-title">E-Commerce Design</h4>
+          <p>Place your text here. orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. isi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+          <a href="#" class="button radius services__content-link">Hire us</a>
+        </div>
+        <div class="content" id="panel2">
+          <img src="images/services/e-commerce-design.jpg" alt="Company Services">
+          <h4 class="services__content-title">E-Commerce Design</h4>
+          <p>Place your text here. orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. isi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+          <a href="#" class="button radius services__content-link">Hire us</a>
+        </div>
+        <div class="content" id="panel3">
+          <img src="images/services/e-commerce-design.jpg" alt="Company Services">
+          <h4 class="services__content-title">E-Commerce Design</h4>
+          <p>Place your text here. orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. isi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+          <a href="#" class="button radius services__content-link">Hire us</a>
         </div>
       </div>
-    </div>
+
+    </section>
+    <!-- /.services -->
+
+  </div>
+  <!-- /.row -->
+
+  <!-- END SERVICES
+  ================================================== -->
+
+
+
+
+
+  <!-- FEATURES
+  ================================================== -->
+
+  <div class="features text-center">
 
     <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
+      
+      <div class="medium-6 large-4 columns">
         
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
+        <div class="features__content wow bounceIn">
+          <div class="features__content-group">
+            <i class="fa fa-toggle-on"></i>
+            <strong class="features__content-title">Easy to Costumize</strong>
+            <p>Small text here just to describe what is this</p>
           </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
         </div>
-      </div>
-    </div>
+        <!-- /.features__content -->
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+      </div>
+
+      <div class="medium-6 large-4 columns">
+
+        <div class="features__content wow bounceIn">
+          <div class="features__content-group">
+            <i class="fa fa-star-o"></i>
+            <strong class="features__content-title">Web Hosting</strong>
+            <p>Small text here just to describe what is this</p>
+          </div>
+        </div>
+        <!-- /.features__content -->
+
+      </div>
+
+      <div class="medium-12 large-4 columns">
+        
+        <div class="features__content wow bounceIn">
+          <div class="features__content-group">
+            <i class="fa fa-paper-plane-o"></i>
+            <strong class="features__content-title">Social Marketing</strong>
+            <p>Small text here just to describe what is this</p>
+          </div>
+        </div>
+        <!-- /.features__content -->
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.features -->
+
+  <!-- END FEATURES
+  ================================================== -->
+
+
+
+
+
+  <!-- PROJECTS
+  ================================================== -->
+  
+  <div id="projects" class="projects">
+    
+    <ul class="row">
+      
+      <li class="medium-6 large-4 columns"> 
+        <figure class="project wow fadeIn">
+          <img src="images/project/1.jpg" alt="Project">
+          <figcaption class="project__descr">
+            <a href="#" data-reveal-id="project-popup">Project title</a>
+          </figcaption>
+          <!-- /.project__descr -->
+        </figure>
+        <!-- /.project -->
+      </li>
+
+      <li class="medium-6 large-4 columns"> 
+        <figure class="project wow fadeIn">
+          <img src="images/project/2.jpg" alt="Project">
+          <figcaption class="project__descr">
+            <a href="#" data-reveal-id="project-popup">Project title</a>
+          </figcaption>
+          <!-- /.project__descr -->
+        </figure>
+        <!-- /.project -->
+      </li>
+
+      <li class="medium-6 large-4 columns"> 
+        <figure class="project wow fadeIn">
+          <img src="images/project/3.jpg" alt="Project">
+          <figcaption class="project__descr">
+            <a href="#" data-reveal-id="project-popup">Project title</a>
+          </figcaption>
+          <!-- /.project__descr -->
+        </figure>
+        <!-- /.project -->
+      </li>
+
+      <li class="medium-6 large-4 columns"> 
+        <figure class="project wow fadeIn">
+          <img src="images/project/4.jpg" alt="Project">
+          <figcaption class="project__descr">
+            <a href="#" data-reveal-id="project-popup">Project title</a>
+          </figcaption>
+          <!-- /.project__descr -->
+        </figure>
+        <!-- /.project -->
+      </li>
+
+      <li class="medium-6 large-4 columns"> 
+        <figure class="project wow fadeIn">
+          <img src="images/project/5.jpg" alt="Project">
+          <figcaption class="project__descr">
+            <a href="#" data-reveal-id="project-popup">Project title</a>
+          </figcaption>
+          <!-- /.project__descr -->
+        </figure>
+        <!-- /.project -->
+      </li>
+
+      <li class="medium-6 large-4 columns"> 
+        <figure class="project wow fadeIn">
+          <img src="images/project/6.jpg" alt="Project">
+          <figcaption class="project__descr">
+            <a href="#" data-reveal-id="project-popup">Project title</a>
+          </figcaption>
+          <!-- /.project__descr -->
+        </figure>
+        <!-- /.project -->
+      </li>
+
+    </ul>
+
+  </div>
+  <!-- /.row -->
+
+  <!-- END PROJECTS
+  ================================================== -->
+
+
+
+
+
+  <!-- COMPANY QUOTE 2
+  ================================================== -->
+  
+  <div class="quote quote--mini text-center">
+    
+    <h3 class="quote__title">There is Beauty in Simplicity</h3>
+
+  </div>
+  <!-- /.quote -->
+
+  <!-- END COMPANY QUOTE 2
+  ================================================== -->
+
+
+
+
+
+  <!-- CONTACT
+  ================================================== -->
+  <section id="contact" class="contact text-center">
+    
+    <h3 class="contact-title">Contact</h3>
+
+    <div id="map-canvas"></div>
+    <!-- /#map-canvas -->
+
+    <address class="contact__address">256 14TH STREET, MANHATAN, NYC +1 767 5438878</address>
+
+  </section>
+  <!-- /.contact -->
+  <!-- END CONTACT
+  ================================================== -->
+
+
+
+
+
+  <!-- FOOTER
+  ================================================== -->
+  
+  <footer id="footer">
+    
+    <div class="row">
+      
+      <div class="medium-4 columns">
+        
+        <div class="site-brand">
+          <hgroup>
+            <h1 class="logo logo--footer"><a href="/" class="show-for-sr">Summer Gone</a></h1>
+            <h2 class="show-for-sr">Creative Solution</h2>
+          </hgroup>
+        </div>
+        <!-- /.site-brand -->
+
+      </div>
+
+      <div class="medium-5 columns">
+        
+        <p class="copyrights text-center">Designed by <a href="#"class="copyrights__link">maulanacreative</a>, all right reserved</p>
+        <!-- /.copyrights -->
+
+      </div>
+
+      <div class="medium-3 columns">
+        
+        <ul class="social">
+          <li><a href="#" class="social__icon social--facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="social__icon social--twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" class="social__icon social--linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+          <li><a href="#" class="social__icon social--google-plus"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#" class="social__icon social--delicious"><i class="fa fa-delicious"></i></a></li>
+        </ul>
+        <!-- /.socials -->
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </footer>
+  <!-- /#footer -->
+
+  <!-- END FOOTER
+  ================================================== -->
+
+    <!-- close the off-canvas menu -->
+    <a class="exit-off-canvas"></a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- MODAL WINDOW
+  ================================================== -->
+  <div id="project-popup" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <img src="images/project/1.jpg" class="project-popup__img" alt="project">
+    <h2 id="modalTitle">Awesome. I have it.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis et, nam, odit excepturi, temporibus eveniet dignissimos ipsum a provident soluta vitae voluptate laborum distinctio magnam natus earum doloribus, eligendi unde!</p>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+  <!-- END MODAL WINDOW
+  ================================================== -->
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-easing-original/jquery.easing.js"></script>
+  <script src="bower_components/foundation/js/foundation.js"></script>
+  <script src="bower_components/wowjs/dist/wow.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
